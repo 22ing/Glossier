@@ -151,6 +151,7 @@ transition: background 0.5s,color 0.5s; }
 
 
 
+
 /* ------------------- gy ------------------- */
 #gy { position: relative; display: flex; flex-wrap: wrap;
     margin-bottom: 200px; }
@@ -175,6 +176,8 @@ transition: background 0.5s,color 0.5s; }
     }
     @media (max-width:768px) {
         #gy .gy_txt { padding: 10px 0; }
+        #gy .gy_txt p { font-size: 1.6rem; }
+        #gy .gy_txt h3 { font-size: 3.5rem; }
     }
 
 
@@ -216,6 +219,8 @@ transition: background 0.5s,color 0.5s; }
     @media (max-width:768px) {
         #futuredew .futuredew_txt { width: 100%; padding: 10px 0; order: 2; }
         #futuredew .futuredew_pic { order: 1; }
+        #futuredew .futuredew_txt p { font-size: 1.6rem; }
+        #futuredew .futuredew_txt h3 { font-size: 3.5rem; }
     }
 
 

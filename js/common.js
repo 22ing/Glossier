@@ -109,11 +109,11 @@ const mv = new Swiper('.mv', {
 
     breakpoints: {
       640: {
-        slidesPerView: 1,
+        slidesPerView: 2,
         spaceBetween: 20,
       },
       800: {
-        slidesPerView: 4,
+        slidesPerView: 3,
         spaceBetween: 40,
       },
       1024: {
