@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+body { font-family: 'Abhaya Libre', serif,'Nanum Myeongjo', serif; font-size: 1.6rem; line-height: 1.5; color: #000; }
+#wrap { overflow-x: hidden; }
+.clearfix::after { content: ''; display: block; clear: both; }
+.inner { max-width: calc(100% - 200px); margin: 0 auto; }/* 좌우 100px씩 빼기 */
+
+    @media (max-width:1600px) {
+        .inner { max-width: calc(100% - 160px); }
+    }
+    @media (max-width:1400px) {
+        .inner { max-width: calc(100% - 140px); }
+    }
+    @media (max-width:1200px) {
+        .inner { max-width: calc(100% - 120px); }
+    }
+    @media (max-width:100px) {
+        .inner { max-width: calc(100% - 100px); }
+    }
+    @media (max-width:768px) {
+        .inner { max-width: calc(100% - 40px); }
+    }
+
+
+

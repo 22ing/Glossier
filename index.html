@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossier</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/common/G_favicon.ico">
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="Glossier">
+    <meta property="og:url" content="https://glossier.com">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Glossier">
+    <meta property="og:discription" content="Glossier is a new approach to beauty.">
+    <meta property="og:image" content="images/common/og_glossier">
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700&family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <!-- 아이콘폰트 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- js -->
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header id="header">
+            <div class="inner clearfix">
+                <h1><a href="index.html"><img src="images/common/logo_white.svg" alt="Glossier"></a></h1>
+                <nav>
+                    <ul class="gnb">
+                        <li>
+                            <a href="sub/products.html">Products</a>
+                                <ul class="depth2">
+                                    <li><a href="sub/products.html">Shop all</a></li>
+                                    <li><a href="sub/products.html">new products</a></li>
+                                    <li><a href="sub/products.html">skincare</a></li>
+                                    <li><a href="sub/products.html">makeup</a></li>
+                                </ul>
+                        </li>
+                        <li>
+                            <a href="#">Brand</a>
+                                <ul class="depth2">
+                                    <li><a href="#">about Glossier</a></li>
+                                    <li><a href="#">in to the glow</a></li>
+                                </ul>
+                        </li>
+                        <li>
+                            <a href="#">Community</a>
+                                <ul class="depth2">
+                                    <li><a href="#">Review</a></li>
+                                    <li><a href="#">Press</a></li>
+                                    <li><a href="#">CS center</a></li>
+                                </ul>
+                        </li>
+                    </ul>
+
+                    <!-- 모바일 메뉴 -->
+                    <div class="mgnb_wrap">
+                        <ul class="mgnb">
+                            <li>Products
+                                <ul class="mdepth2">
+                                    <li><a href="sub/products.html">Shop all</a></li>
+                                    <li><a href="sub/products.html">new products</a></li>
+                                    <li><a href="sub/products.html">skincare</a></li>
+                                    <li><a href="sub/products.html">makeup</a></li>
+                                </ul>
+                            </li>
+                            <li>Brand
+                                <ul class="mdepth2">
+                                    <li><a href="#">about Glossier</a></li>
+                                    <li><a href="#">in to the glow</a></li>
+                                </ul>
+                            </li>
+                            <li>Community
+                                <ul class="mdepth2">
+                                    <li><a href="#">Review</a></li>
+                                    <li><a href="#">Press</a></li>
+                                    <li><a href="#">CS center</a></li>
+                                    </ul>
+                            </li>
+                        </ul><!-- mgnb -->
+                        <div class="mgnb_close"><i class="bi bi-x" aria-label="모바일메뉴 닫기"></i></div>
+                    </div><!-- mgnb_wrap -->
+                </nav>
+
+
+
+                <ul class="util">
+                    <li class="btn_search">
+                        <a href="#"><img src="images/common/icon_search.svg" alt="검색버튼"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/common/icon_bag.svg" alt="장바구니"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="ham"><img src="images/common/icon_menu.svg" alt="모바일메뉴"></a>
+                    </li>
+                </ul>
+            </div><!-- inner -->
+
+            <div class="search"><!-- header기준 positon absolute -->
+                <form>
+                    <fieldset>
+                        <legend>검색영역</legend>
+                        <input type="text" placeholder="Do you need help?"><input type="submit" value="검색">
+                    </fieldset>
+                </form>
+
+                <div class="search_close"><span></span>검색닫기<span></span></div>
+                
+                <!-- span말고 아이콘폰트로 만들 땐 아래처럼! 크기조절은 아이콘폰트니까 폰트사이즈로 조절 -->
+                <!-- <div class="search_close"></div><i class="bi bi-x-circle-fill" aria-label="검색닫기"></i></div> -->
+            </div><!-- search -->
+
+        </header>
+
+
+        <main id="container">
+
+            <articel id="main_visual">
+                <div class="swiper mv">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide mv1">
+                            <img src="images/mv01.png" alt="모델사진">
+                        </li>
+                        <li class="swiper-slide mv2">
+                            <img src="images/mv02.jpg" alt="화장품 텍스쳐">
+                        </li>
+                        <li class="swiper-slide mv3">
+                            <img src="images/mv03.jpg" alt="모델사진">
+                        </li>
+                        <li class="swiper-slide mv4">
+                            <img src="images/mv04.jpg" alt="제품사진1">
+                        </li>
+                        <li class="swiper-slide mv5">
+                            <img src="images/mv05.jpg" alt="제품사진2">
+                        </li>
+                        <li class="swiper-slide mv6">
+                            <img src="images/mv06.jpg" alt="제품사진3">
+                        </li>
+                    </ul><!-- swiper-wrapper -->
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div><!-- swiper mv -->
+            </articel><!-- main_visual -->
+
+
+            <section id="best_new">
+                <div class="sub_title">
+                    <h2>Best & New</h2>
+                </div><!-- sub_title -->
+
+                <div class="swiper bn">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="#"><img src="images/best01.jpg" alt="best제품1"></a>
+                            <dl>
+                                <dt>Glossier You</dt>
+                                <dd>55,000 won</dd>
+                            </dl>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#"><img src="images/best02.jpg" alt="best제품2"></a>
+                            <dl>
+                                <dt>Boy Brow</dt>
+                                <dd>11,000 won</dd>
+                            </dl>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#"><img src="images/best03.jpg" alt="best제품3"></a>
+                            <dl>
+                                <dt>Cloud Paint</dt>
+                                <dd>35,000 won</dd>
+                            </dl>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#"><img src="images/best04.jpg" alt="best제품4"></a>
+                            <dl>
+                                <dt>Futureduew</dt>
+                                <dd>36,000 won</dd>
+                            </dl>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#"><img src="images/best05.jpg" alt="best제품5"></a>
+                            <dl>
+                                <dt>Rose Balm</dt>
+                                <dd>16,000 won</dd>
+                            </dl>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#"><img src="images/best06.jpg" alt="best제품6"></a>
+                            <dl>
+                                <dt>Body Hero</dt>
+                                <dd>40,000 won</dd>
+                            </dl>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#"><img src="images/best07.jpg" alt="best제품7"></a>
+                            <dl>
+                                <dt>Hero Soap</dt>
+                                <dd>9,000 won</dd>
+                            </dl>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#"><img src="images/best08.jpg" alt="best제품8"></a>
+                            <dl>
+                                <dt>Mascara</dt>
+                                <dd>25,000 won</dd>
+                            </dl>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#"><img src="images/best09.jpg" alt="best제품9"></a>
+                            <dl>
+                                <dt>Shower Oil</dt>
+                                <dd>30,000 won</dd>
+                            </dl>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#"><img src="images/best010.jpg" alt="best제품10"></a>
+                            <dl>
+                                <dt>Handcream</dt>
+                                <dd>18,000 won</dd>
+                            </dl>
+                        </li>
+                    </ul><!-- swiper-wrapper -->
+                </div><!-- swiper bn -->
+            </section><!-- best_new -->
+
+            <section id="gy">
+                <div class="gy_pic" data-aos="fade-right">
+                    <a href="#"><img src="images/glossier_you.jpg" alt="Glossier You"></a>
+                </div><!-- gy_pic -->
+
+                <div class="gy_txt" data-aos="fade-left">
+                    <p>eau de parfum</p>
+                    <h3>Glossier You</h3>
+                    <p>The ultimate personal fragrance.<br>
+                        An eau de parfum that melts into skin and smells a bit different on everyone</p>
+                    <a href="#" class="btn_more">view more</a>
+                </div><!-- gy_txt -->
+            </section><!-- gy -->
+
+
+            <section id="movie">
+                    <iframe src="https://www.youtube.com/embed/3Om1tmk9IAQ?autoplay=1&mute=1&end=120&controls=0&loop=1&playlist=3Om1tmk9IAQ"></iframe>
+            </section><!-- movie -->
+
+
+            <section id="futuredew">
+                <div class="futuredew_txt" data-aos="fade-right">
+                    <p>oil serum hybrid</p>
+                    <h3>Futureduew</h3>
+                    <p>An instant dewy glow that lasts.<br>
+                        A shortcut to the way your skin looks after a full skincare routine<br>
+                        —dewy, glowing, cared-for—in one long-wearing product</p>
+                    <a href="#" class="btn_more">view more</a>
+                </div><!-- futuredew_txt -->
+
+                <div class="futuredew_pic" data-aos="fade-left">
+                    <a href="#"><img src="images/futuredew.jpg" alt="Futureduew"></a>
+                </div><!-- gy_pic -->
+            </section><!-- futuredew -->
+
+
+            <section id="insta">
+                <div class="inner">
+                    <div class="area">
+                    <div class="insta_txt clearfix">
+                        <div class="insta_id">
+                            <h4>@glossier</h4>
+                        </div><!-- insta_id -->
+                        <div class="insta_desc">
+                            <a href="#"><i class="bi bi-chevron-left"></i>Follow us on Instagram</a>
+                            <h5>인스타그램에서 만나는 글로시에</h5>
+                        </div><!-- insta_desc -->
+                    </div><!-- insta_txt -->
+
+                    <div class="insta_pic">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="#">
+                                    <img src="images/insta01.jpg" alt="인스타 사진 1">
+                                    <div class="over">
+                                        <span>Gloss shadow<br>dust<br>Dr.Balm</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/insta02.jpg" alt="인스타 사진 2">
+                                    <div class="over">
+                                        <span>Gloss Handcream</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/insta03.jpg" alt="인스타 사진 3">
+                                    <div class="over">
+                                        <span>color Play</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/insta04.jpg" alt="인스타 사진 4">
+                                    <div class="over">
+                                        <span>Cloud paint Collection</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- insta_pic -->
+                </div>
+
+            </div><!-- inner -->
+
+            </section><!-- insta -->
+
+        </main>
+
+
+        <footer id="footer">
+            <div class="inner">
+                <div class="footer_logo">
+                    <img src="images/common/footer_logo.png" alt="logo">
+                </div><!-- footer_logo -->
+
+                <div class="footer_txt">
+                    <ul class="lnb">
+                        <li><a href="#">about Glossier</a></li>
+                        <li><a href="#">contacts us</a></li>
+                        <li><a href="#">privaty policy</a></li>
+                        <li><a href="#">help & FAQ</a></li>
+                    </ul>
+                    <p class="copy">© 2022, Glossier. All rights reserved.</p>
+                </div><!-- footer_txt -->
+                
+                <div class="footer_sns">
+                    <ul>
+                        <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                        <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                        <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                        <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                    </ul>
+                </div><!-- footer_sns -->
+
+            </div><!-- inner -->
+        </footer>
+        <a href="#" class="gotop"><i class="bi bi-chevron-up"></i></a>
+    </div><!-- wrap -->
+</body>
+</html>

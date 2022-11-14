@@ -1,0 +1,81 @@
+// dafault
+const swiper = new Swiper('.mySwiper', {
+   // 옵션
+});
+
+// 자동 슬라이드 설정, 비활성화 false
+autoplay : {
+  delay : 5000,  // 슬라이드가 머무르는 시간, 5000=5초
+  disableOnInteraction : false,  // false로 설정하면 스와이프 후 자동 재생이 비활성화 되지 않음
+},
+
+// 페이저 버튼 지정
+pagination : {
+el : '.swiper-pagination',  // 버튼 태그 설정
+type : 'bullets',  // 버튼 종류 설정 'bullets(기본)' | 'fraction(숫자)' | 'progressbar'
+clickable : true,  // 버튼 클릭 여부
+},
+
+// 방향 버튼 지정
+navigation : {   
+nextEl : '.swiper-button-next',  // 다음 버튼
+prevEl : '.swiper-button-prev',  // 이전 버튼
+},
+
+// 페이드 효과
+effect: 'fade',
+  fadeEffect: {
+    crossFade: true    // false는 이미지가 겹쳐짐
+},
+
+// 스크롤바 여부
+scrollbar: {
+          el: ".swiper-scrollbar",
+          hide: true,
+},
+
+// 반응형 슬라이드 (이건 min-width 기준)
+breakpoints: {
+          640: {  // 가로해상도가 640px 이상일 경우(640~768)
+            slidesPerView: 2,
+            spaceBetween: 20, //슬라이드간 공백(margin필요없음)
+          },
+          768: {  // 가로해상도가 768px 이상일 경우(768~1024)
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {  // 가로해상도가 1024px 이상일 경우
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        },
+
+speed : 1000  // 슬라이드 동작 속도
+loop : false,  // 슬라이드 반복 여부
+slidesPerView : '3',  // 한 슬라이드에 보여줄 갯수
+spaceBetween : 20,  // 슬라이드 사이 여백
+direction: 'vertical',  // 수직 슬라이드
+centeredSlides: true,  // 첫번째 슬라이드 가운데 배치 (좌우는 잘림)
+mousewheel: true,  // 마우스휠로 슬라이드 제어
+
+
+- 재생, 멈춤
+$('.slide_play').hide();
+$('.slide_pause').on('click', function () {
+    slide.autoplay.stop();
+    $('.slide_pause').hide();
+    $('.slide_play').show();
+});
+$('.slide_play').on('click', function () {
+    slide.autoplay.start();
+    $('.slide_pause').show();
+    $('.slide_play').hide();
+});
+
+
+
+※ display:none 으로 슬라이드 작동안할시
+observer : true,
+observeParents : true,
+
+
